@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+#movieResult {
+    margin-top: 20px;
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+#movieResult .err {
+    text-align: center;
+    color: red;
+}
+
+/* Hide/fade effect */
+#movieResult.hide {
+    opacity: 0;
+}
+
+/* Movie Card Style */
+.movie-card {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fafafa;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+}
+
+.movie-card img {
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.movie-info {
+    flex: 1;
+    min-width: 150px;
+}
+
+.movie-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.movie-info p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Media Queries for small screens */
+@media (max-width: 500px) {
+    input {
+        width: 100%;
+    }
+
+    .movie-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie-card img {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .movie-info {
+        min-width: 100%;
+    }
+}
