@@ -22,4 +22,8 @@ A simple, responsive Movie Search App built using HTML, CSS, and JavaScript. Thi
 - JavaScript
 - OMDb API
 
+## Live Demo
+You can view the live version of the project here:
+👉 [View Project](https://aksa-ansari.github.io/snake-game/)
+
 ### Made with ❤️ By [Aksa Ansari](https://github.com/Aksa-Ansari)
